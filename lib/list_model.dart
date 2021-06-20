@@ -1,6 +1,7 @@
-import 'package:filter_menu/task.dart';
-import 'package:filter_menu/task_row.dart';
 import 'package:flutter/material.dart';
+
+import 'task.dart';
+import 'task_row.dart';
 
 class ListModel {
   ListModel(this.listKey, items) : this.items = new List.of(items);

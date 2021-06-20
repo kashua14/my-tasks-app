@@ -1,6 +1,6 @@
-import 'package:filter_menu/task.dart';
 import 'package:flutter/material.dart';
 
+import 'task.dart';
 
 List<Task> tasks = [
   new Task(

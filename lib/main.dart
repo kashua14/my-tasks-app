@@ -1,9 +1,10 @@
-import 'package:filter_menu/animated_fab.dart';
-import 'package:filter_menu/diagonal_clipper.dart';
-import 'package:filter_menu/initial_list.dart';
-import 'package:filter_menu/list_model.dart';
-import 'package:filter_menu/task_row.dart';
 import 'package:flutter/material.dart';
+
+import 'animated_fab.dart';
+import 'diagonal_clipper.dart';
+import 'initial_list.dart';
+import 'list_model.dart';
+import 'task_row.dart';
 
 void main() => runApp(new MyApp());
 
