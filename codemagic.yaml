@@ -10,7 +10,7 @@ workflows:
         FCI_KEYSTORE_PASSWORD: Encrypted(Z0FBQUFBQmd6cVpla0NMVTRkU1c5Ri13R0E2eGFiWC1kZTQ3bGtBRFp2a0tBVzlnMVM0alNSX2hrMHZpWmxsUWp2QlhybEVwMzk2Tmc1OFlWYzZXbXA2XzhiR2ZmMklPWHc9PQ==) # <-- Put your encrypted keystore password here
         FCI_KEY_PASSWORD: Encrypted(Z0FBQUFBQmd6cVpla0NMVTRkU1c5Ri13R0E2eGFiWC1kZTQ3bGtBRFp2a0tBVzlnMVM0alNSX2hrMHZpWmxsUWp2QlhybEVwMzk2Tmc1OFlWYzZXbXA2XzhiR2ZmMklPWHc9PQ==) # <-- Put your encrypted key alias password here
         FCI_KEY_ALIAS: Encrypted(Z0FBQUFBQmd6cVhLbVJpNTRTM0JYOHdrRFJWZE1EN0hnUExJYlFqcTNyZi1EV3d4MlQ1QVl4TU9WY1ctUWFIMld2VXJDTHR0YUEwdnNzQ3hJSElnV2stXy1RWmktYlNmVFE9PQ==) # <-- Put your encrypted key alias here
-        PACKAGE_NAME: "com.yourcompany.mytasks" # <-- Put your package name here
+        PACKAGE_NAME: "com.joshkasasira.mytasks" # <-- Put your package name here
         GOOGLE_PLAY_TRACK: "alpha" # <-- This must be "alpha" or above.  
       flutter: stable
       xcode: latest
@@ -84,7 +84,7 @@ workflows:
         CERTIFICATE_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted Certificate Private Key here 
         APPLE_ID: Encrypted(...) # <-- Put your encrypted Apple Id email address here
         APP_SPECIFIC_PASSWORD: Encrypted(...) # <-- Put your encrypted App Specific password here. See here for more information - https://support.apple.com/en-us/HT204397
-        BUNDLE_ID: "com.yourcompany.mytasks" # <-- Put your bundle id here
+        BUNDLE_ID: "com.joshkasasira.mytasks" # <-- Put your bundle id here
         APP_STORE_ID: 1111111111 # <-- Use the TestFlight Apple id number (An automatically generated ID assigned to your app) found under General > App Information > Apple ID. 
       flutter: stable
       xcode: latest

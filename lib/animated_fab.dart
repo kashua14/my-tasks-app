@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class AnimatedFab extends StatefulWidget {
   final VoidCallback onClick;
 
-  const AnimatedFab({Key? key, required this.onClick}) : super(key: key);
+  const AnimatedFab({Key key, this.onClick}) : super(key: key);
 
   @override
   _AnimatedFabState createState() => new _AnimatedFabState();
@@ -13,8 +13,8 @@ class AnimatedFab extends StatefulWidget {
 
 class _AnimatedFabState extends State<AnimatedFab>
     with SingleTickerProviderStateMixin {
-  late AnimationController _animationController;
-  late Animation<Color?> _colorAnimation;
+  AnimationController _animationController;
+  Animation<Color> _colorAnimation;
 
   final double expandedSize = 180.0;
   final double hiddenSize = 20.0;
@@ -24,7 +24,7 @@ class _AnimatedFabState extends State<AnimatedFab>
     super.initState();
     _animationController = new AnimationController(
         vsync: this, duration: Duration(milliseconds: 200));
-    _colorAnimation = new ColorTween(begin: Colors.pink, end: Colors.pink[800])
+    _colorAnimation = new ColorTween(begin: Colors.pinkAccent, end: Colors.pink)
         .animate(_animationController);
   }
 
@@ -41,7 +41,7 @@ class _AnimatedFabState extends State<AnimatedFab>
       height: expandedSize,
       child: new AnimatedBuilder(
         animation: _animationController,
-        builder: (BuildContext context, Widget? child) {
+        builder: (BuildContext context, Widget child) {
           return new Stack(
             alignment: Alignment.center,
             children: <Widget>[
@@ -78,7 +78,7 @@ class _AnimatedFabState extends State<AnimatedFab>
               angle: -angle,
               child: new Icon(
                 icon,
-                color: Colors.white,
+                color: Colors.pink,
               ),
             ),
             iconSize: iconSize,
@@ -96,7 +96,7 @@ class _AnimatedFabState extends State<AnimatedFab>
     return new Container(
       height: size,
       width: size,
-      decoration: new BoxDecoration(shape: BoxShape.circle, color: Colors.pink),
+      decoration: new BoxDecoration(shape: BoxShape.circle),
     );
   }
 

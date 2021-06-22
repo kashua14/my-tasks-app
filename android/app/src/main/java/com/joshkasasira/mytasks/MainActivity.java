@@ -1,4 +1,4 @@
-package com.yourcompany.mytasks;
+package com.joshkasasira.mytasks;
 
 import io.flutter.embedding.android.FlutterActivity;
 
